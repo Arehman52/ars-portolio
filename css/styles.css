@@ -683,3 +683,16 @@ img {
   }
 
 }
+
+
+/* The below code is purely owned by Abdur Rehman */
+
+
+.credits-footer {
+  position: fixed;
+  font-size: 11px !important;
+  background: #FBFDFE;
+  padding-top: 10px;
+  bottom: 0px;
+  left: 40%;
+}
