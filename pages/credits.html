@@ -6,21 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./../css/credits.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Abdur Rehman - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
 
 
+    <section>
+        <div class="skills-graph">
+            <h2>Skills</h2>
+            <div>
+                <canvas id="skillChart"></canvas>
+            </div>
+        </div>
+    </section>
 
-    <main class="main">
-        
-    </main>
+    <script>
+        // Chart.js code to create a radar chart representing skills
+        var el = document.getElementById('skillChart');
+        var ctx = el.getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Angular', 'TS/JS', 'Node.js', 'DotNet', 'React', 'Java'],
+                datasets: [{
+                    label: 'Rating',
+                    data: [7, 6, 6, 4, 4, 5],
+                    backgroundColor: 'rgba(52, 152, 219, 0.5)',
+                    borderColor: '#3498DB',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scale: {
+                    angleLines: {
+                        display: false
+                    },
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 
-
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

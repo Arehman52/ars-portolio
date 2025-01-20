@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Abdur Rehman - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <section style="display: flex; justify-content: space-between; align-items: center; margin: 20px 60px;">
 
-        <section style="margin: 10px;">
+    <!-- <section style="margin: 10px;">
+        <h3 class="qualification__button section__title ">Abdur Rehman</h3>
+    </section> -->
+    <nav class="navbar">
+        <div class="navbar-container">
             <a href="./index.html"><img src="./assets/images/portfolio-image.jpg"
-                    style="width: 160px; border-radius: 50%; border: 1px solid #5159ebc0;" title="Abdur Rehman"
-                    alt="logo" srcset=""></a>
-            <h3 class="qualification__button section__title ">Abdur Rehman</h3>
-        </section>
-        <nav>
-            <ul>
-                <li><a href="./pages/bio.html">Bio</a></li>
-                <li><a href="./pages/profile.html">Profile</a></li>
-                <li>About me</li>
-                <li>Contact me</li>
+                    style="left:50px; width: 160px; border-radius: 50%; border: 1px solid #5159ebc0; position: absolute;"
+                    title="Abdur Rehman" alt="logo" srcset=""></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#bio">Bio</a></li>
             </ul>
-        </nav>
-    </section>
+        </div>
+    </nav>
 
+    <div class="content">
+        <h1>Welcome to My Portfolio</h1>
+
+    </div>
 
 
     <main class="main">
@@ -37,7 +45,7 @@
 
         <!--============== QUALIFICATION ===============-->
         <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
+
             <span class="section__subtitle">My personal journey</span>
 
             <div class="qualification__container container">
@@ -54,11 +62,12 @@
                 </div>
 
                 <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
+                    <div class="qualification__content qualification__active ml-5" data-content id="education">
+
+                        <!--==================== QUALIFICATION SEGMENT STARTS ====================-->
+                        <!--==================== QUALIFICATION LEFT ====================-->
+                        <div class="row mb-4 ml-4">
+                            <div class="col-5">
                                 <h3 class="qualification__title">Class-10<sup>th</sup> </h3>
                                 <span class="qualification__subtitle">Govt. Excellence H. S. School Waidhan, Singrauli
                                     (M.P.)</span>
@@ -67,49 +76,66 @@
                                     2017
                                 </div>
                             </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                            <div class="col-1">
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
                             </div>
                         </div>
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                        <!--==================== QUALIFICATION RIGHT ====================-->
+                        <div class="row mb-4 ml-4">
+                            <div class="col-5"></div>
+                            <div class="col-1">
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
                             </div>
-
-                            <div>
-                                <h3 class="qualification__title">Class-12<sup>th</sup></h3>
+                            <div class="col-5">
+                                <h3 class="qualification__title">Class-10<sup>th</sup> </h3>
                                 <span class="qualification__subtitle">Govt. Excellence H. S. School Waidhan, Singrauli
                                     (M.P.)</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2019
+                                    2017
                                 </div>
                             </div>
                         </div>
+                        <!--==================== QUALIFICATION SEGMENT ENDS ====================-->
 
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">B. Tech in CSE</h3>
-                                <span class="qualification__subtitle">Indian Institute of Information Technology,
-                                    Kota</span>
+                        <!--==================== QUALIFICATION SEGMENT STARTS ====================-->
+                        <!--==================== QUALIFICATION LEFT ====================-->
+                        <div class="row mb-4 ml-4">
+                            <div class="col-5">
+                                <h3 class="qualification__title">Class-10<sup>th</sup> </h3>
+                                <span class="qualification__subtitle">Govt. Excellence H. S. School Waidhan, Singrauli
+                                    (M.P.)</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2024
+                                    2017
                                 </div>
                             </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
+                            <div class="col-1">
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
                             </div>
                         </div>
+                        <!--==================== QUALIFICATION RIGHT ====================-->
+                        <div class="row mb-4 ml-4">
+                            <div class="col-5"></div>
+                            <div class="col-1">
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
+                            </div>
+                            <div class="col-5">
+                                <h3 class="qualification__title">Class-10<sup>th</sup> </h3>
+                                <span class="qualification__subtitle">Govt. Excellence H. S. School Waidhan, Singrauli
+                                    (M.P.)</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION SEGMENT ENDS ====================-->
+
 
                     </div>
 
@@ -127,17 +153,17 @@
                             </div>
 
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
                             </div>
                         </div>
 
                         <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div></div>
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
+                                <span class="margin__circle"></span>
+                                <span class="margin__line"></span>
                             </div>
 
                             <div>
@@ -195,7 +221,7 @@
                                     2022 - 2023
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
@@ -206,11 +232,44 @@
 
 
         <footer class="credits-footer">
-            The partial design/resources were copied from <a href="https://codepen.io/ambresh20/pen/qBvONjw">Ambresh20 -
-                codePen.io</a>.
+            <!-- <div class="credits__hover">
+            </div> -->
+            <div class="credits__body">
+                <button id="slideButton" title="View Credits"><i class="fa-solid fa-angles-up"></i></button>
+                <br>
+                The partial design/resources were copied 
+                <br>
+                from <a
+                    href="https://codepen.io/ambresh20/pen/qBvONjw" target="_blank">Ambresh20 -
+                    codePen.io</a>.
+            </div>
         </footer>
     </main>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("slideButton").addEventListener("click", function () {
+            const icon = document.getElementById("slideButton").childNodes[0];
+            if(icon.classList.contains('fa-angles-up')) {
+                icon.classList.remove('fa-angles-up');
+                icon.classList.add('fa-angles-down');
+            } else {
+                icon.classList.remove('fa-angles-down');
+                icon.classList.add('fa-angles-up');
+            }
+            const creditsBody = document.querySelector(".credits__body");
+            if (creditsBody.style.transform === "translateY(-40px)") {
+                creditsBody.style.transform = "translateY(0)";
+            } else {
+                creditsBody.style.transform = "translateY(-40px)";
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+/* contains the custom css classes for each element or groups of elements */
+
+.skill-bubble:hover {
+    color: aliceblue;
+    background-color: rgb(104, 165, 167);
+}
+.skill-bubble {
+    border: 1px solid lightblue;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: aliceblue;
+    background-color: cadetblue;
+}
+
+
+nav {
+    overflow: hidden;
+    color: rgb(224, 255, 252);
+    padding-left: 20%; /* Add left margin for gap */
+}
+
+nav a {
+    float: left;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
