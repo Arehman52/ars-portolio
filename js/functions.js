@@ -1,7 +1,6 @@
 export function getDuration(startDate, endDate = new Date()) {
     const start = new Date(startDate);
-    const end = new Date(endDate);
-    debugger
+    const end = new Date(endDate); 
   
     let years = end.getFullYear() - start.getFullYear();
     let months = end.getMonth() - start.getMonth();
