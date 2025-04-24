@@ -1,4 +1,4 @@
-import { getDuration } from './functions.js';
+import { getDuration, showLoader } from './functions.js';
 
 const durationInavista = document.getElementById("durationInavista");
 const durationTT = document.getElementById("durationTT");
@@ -44,9 +44,11 @@ durationGM.innerText = getDuration(new Date('08/02/2021'), new Date('03/02/2022'
 document.getElementById("slideButton").addEventListener("click", function () {
   const icon = document.getElementById("slideButton").childNodes[0];
   if(icon.classList.contains('fa-angles-up')) {
+    showLoader(true);
       icon.classList.remove('fa-angles-up');
       icon.classList.add('fa-angles-down');
   } else {
+    showLoader(false);
       icon.classList.remove('fa-angles-down');
       icon.classList.add('fa-angles-up');
   }

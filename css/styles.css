@@ -1,7 +1,23 @@
 /* =============== GOOGLE FONTS =============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.no-scroll {
+  overflow: hidden;
+  padding-right: 9px;
+  height: 100%;
+}
 
-
+#spinner {
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.227);
+  position: absolute;
+  pointer-events: none;
+}
+#spinner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+}
 
 * {
   box-sizing: border-box;
@@ -105,6 +121,7 @@ body, html {
   --navbar-color: #264653;
   --light-text-color: #ffffffc8;
   --job-position-color: #768c95;
+  --dark-black: #000000;
   --test-color1: #415a77;
   --test-color2: #8d99ae;
   --first-color: #778da9;
@@ -230,8 +247,8 @@ img {
 /*==================== LAYOUT ====================*/
 
 .container {
-  max-width: 1080px;
-  margin-left: var(--mb-2);
+  max-width: 90% !important;
+  margin-left: var(5rem) !important;
   margin-right: var(--mb-1-5);
 }
 
@@ -387,7 +404,7 @@ img {
 }
 
 .qualification__button.qualification__active {
-  color: var(--first-color);
+  color: #3285c3 !important;
 }
 
 
